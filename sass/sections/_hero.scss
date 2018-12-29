@@ -1,0 +1,18 @@
+.hero {
+    background-image: linear-gradient(to bottom, $color-primary-dark, transparent), url(/images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    position: relative;
+
+    &__box {
+        position: absolute;
+        top: 35%;
+        right: 12.5%;
+    }
+
+    &__text {
+        color: transparent;
+        -webkit-text-stroke: 2px $color-white;
+    }
+}

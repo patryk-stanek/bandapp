@@ -49,6 +49,11 @@ body {
   background-color: #eb2f06;
 }
 
+.heading-1 {
+  font-size: 10rem;
+  color: #ffffff;
+}
+
 .nav {
   -ms-flex-preferred-size: 35%;
       flex-basis: 35%;
@@ -288,5 +293,24 @@ body {
   font-size: 4rem;
   margin: 1.5rem;
   text-align: center;
+}
+
+.hero {
+  background-image: linear-gradient(to bottom, #eb2f06, transparent), url(/images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50rem;
+  position: relative;
+}
+
+.hero__box {
+  position: absolute;
+  top: 35%;
+  right: 12.5%;
+}
+
+.hero__text {
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
