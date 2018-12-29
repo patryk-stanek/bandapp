@@ -33,7 +33,7 @@
         text-decoration: none;
         color: $color-white;
         position: relative;
-        @include flexbox;
+        display: flex;
         justify-content: center;
         align-items: center;
         height: 25vw;

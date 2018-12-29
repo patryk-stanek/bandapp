@@ -2,7 +2,7 @@
     @include section-padding;
 
     &__container {
-        @include flexbox;
+        display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 5rem;
@@ -27,7 +27,7 @@
         box-shadow: inset 0px 0px 0px 2000px rgba($color-black, .5);
         height: 30vh;
         width: 100%;
-        @include flexbox;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -37,7 +37,6 @@
 
         &:hover {
             box-shadow: inset 0px 0px 0px 2000px rgba($color-black, .2);
-            transform: scale(1.05);
         }
 
         &--band {

@@ -93,8 +93,6 @@ body {
   margin-right: .5rem;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-align: center;
@@ -169,7 +167,6 @@ body {
   background-color: #ffffff;
   -ms-flex-direction: column;
       flex-direction: column;
-  border-radius: 2px;
 }
 
 .nav__item {
@@ -209,7 +206,6 @@ body {
   background-color: #f4f2f2;
   border: none;
   padding: .7rem 2rem;
-  border-radius: 100px;
   width: 90%;
   transition: all .2s ease-out;
   margin-right: -3.5rem;
@@ -272,8 +268,6 @@ body {
   position: relative;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
@@ -389,8 +383,6 @@ body {
 .tabs__list {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   list-style: none;
   -ms-flex-pack: justify;
       justify-content: space-between;
@@ -451,8 +443,6 @@ body {
 .tiles {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding: 0.5rem;
 }
 
@@ -526,8 +516,6 @@ body {
 .header {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-pack: justify;
       justify-content: space-between;
   -ms-flex-align: center;
@@ -593,8 +581,6 @@ body {
 .opinions__box {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   position: relative;
   margin-top: 5rem;
 }
@@ -648,8 +634,6 @@ body {
 .options__container {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
@@ -678,8 +662,6 @@ body {
   width: 100%;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: center;
@@ -694,7 +676,6 @@ body {
 
 .options__card:hover {
   box-shadow: inset 0px 0px 0px 2000px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05);
 }
 
 .options__card--band {
@@ -722,8 +703,6 @@ body {
 .welcome {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-align: center;
       align-items: center;
   background-color: rgba(235, 47, 6, 0.05);

@@ -2,7 +2,7 @@
     @include section-padding;
 
     &__box {
-        @include flexbox;
+        display: flex;
         position: relative;
         margin-top: 5rem;
     }

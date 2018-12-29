@@ -1,5 +1,5 @@
 .tiles {
-    @include flexbox;
+    display: flex;
     padding: 0.5rem;
 
     &__box {
