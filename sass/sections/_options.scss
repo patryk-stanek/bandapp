@@ -1,0 +1,70 @@
+.options {
+    text-align: center;
+    @include section-padding;
+
+    &__container {
+        @include flexbox;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    &__box {
+        width: 50%;
+
+        &:nth-child(odd) {
+            padding: 0 1rem 0 2rem;
+        }
+
+        &:nth-child(even) {
+            padding: 0 2rem 0 1rem;
+        }
+    }
+
+    &__card {   
+        @include transition;
+        background-size: cover;
+        background-position: center;
+        box-shadow: inset 0px 0px 0px 2000px rgba($color-black, .5);
+        height: 30vh;
+        width: 100%;
+        border-radius: 5px;
+        @include flexbox;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $color-white;
+        cursor: pointer;
+        backface-visibility: hidden;
+
+        &:hover {
+            box-shadow: inset 0px 0px 0px 2000px rgba($color-black, .2);
+            transform: scale(1.05);
+        }
+
+        &--band {
+            background-image: url(/images/band.jpg);
+        }
+
+        &--dj {
+            background-image: url(/images/dj.jpg);
+        }
+    }
+
+    &__button:link,
+    &__button:visited {
+        text-decoration: none;
+        background-color: $color-primary-dark;
+        color: $color-white;
+        border-radius: 5px;
+        font-size: 2rem;
+        padding: .8rem 3.5rem;
+        margin-top: 1rem;
+        @include transition;
+
+        &:hover,
+        &:active {
+            background-color: $color-primary;
+        }
+    }
+}

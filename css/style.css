@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +34,7 @@ body {
 .btn:visited {
   background-color: #fa983a;
   border-radius: 5px;
-  padding: 1rem 2.5rem;
+  padding: .8rem 2.5rem;
   cursor: pointer;
   color: #ffffff;
   text-transform: uppercase;
@@ -54,10 +55,23 @@ body {
   color: #ffffff;
 }
 
-.heading-2 {
+.heading-2,
+.heading-2-white {
   font-size: 3.5rem;
-  color: #eb2f06;
   font-weight: 300;
+}
+
+.heading-2 {
+  color: #eb2f06;
+}
+
+.heading-2-white {
+  color: #ffffff;
+}
+
+.heading-3 {
+  font-size: 2.3rem;
+  font-weight: 400;
 }
 
 .nav {
@@ -209,6 +223,156 @@ body {
   color: #999;
 }
 
+.slides {
+  width: 100%;
+  height: 25vw;
+  position: relative;
+  margin-top: 5rem;
+}
+
+.slides * {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.slides input {
+  display: none;
+}
+
+.slides__container {
+  opacity: 0;
+  transition: all .2s ease-out;
+  background-color: #000000;
+}
+
+.slides__box {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.slides__link:link, .slides__link:visited {
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 25vw;
+}
+
+.slides__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  filter: brightness(80%);
+}
+
+.slides__text {
+  z-index: 1;
+  font-size: 2rem;
+}
+
+.slides__name {
+  display: block;
+  font-size: 10rem;
+  line-height: 7rem;
+}
+
+.slides__city {
+  font-size: 3rem;
+}
+
+.slides__nav label {
+  width: 20rem;
+  opacity: 0;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  font-family: "Varela Round", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15rem;
+  text-shadow: 0 0 1.5rem #777;
+  transition: all .2s ease-out;
+}
+
+.slides__nav label:nth-child(odd) {
+  left: 0;
+}
+
+.slides__nav label:nth-child(even) {
+  right: 0;
+}
+
+.slides__nav label:hover {
+  color: #ffffff;
+}
+
+.slides__arrow {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.slides__container:hover > .slides__nav label {
+  opacity: 1;
+}
+
+.slides input:checked + .slides__container {
+  opacity: 1;
+}
+
+.slides__controls {
+  width: 100%;
+  bottom: 1rem;
+  height: 1rem;
+  display: block;
+  position: absolute;
+  text-align: center;
+}
+
+.slides__dot {
+  top: -.5rem;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 .5rem;
+  position: relative;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: all .2s ease-out;
+}
+
+.slides__dot:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.slides input#top1:checked ~ .slides__controls label#dot__1,
+.slides input#top2:checked ~ .slides__controls label#dot__2,
+.slides input#top3:checked ~ .slides__controls label#dot__3 {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
 .tabs {
   border-bottom: 2px solid #eb2f06;
 }
@@ -281,6 +445,12 @@ body {
   margin-right: 1rem;
 }
 
+.customer {
+  text-align: center;
+  background-color: #eb2f06;
+  padding: 5rem 0;
+}
+
 .header {
   display: -ms-flexbox;
   display: flex;
@@ -318,6 +488,91 @@ body {
 .hero__text {
   color: transparent;
   -webkit-text-stroke: 2px #ffffff;
+}
+
+.options {
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.options__container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 5rem;
+}
+
+.options__box {
+  width: 50%;
+}
+
+.options__box:nth-child(odd) {
+  padding: 0 1rem 0 2rem;
+}
+
+.options__box:nth-child(even) {
+  padding: 0 2rem 0 1rem;
+}
+
+.options__card {
+  transition: all .2s ease-out;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0px 0px 0px 2000px rgba(0, 0, 0, 0.5);
+  height: 30vh;
+  width: 100%;
+  border-radius: 5px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.options__card:hover {
+  box-shadow: inset 0px 0px 0px 2000px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.options__card--band {
+  background-image: url(/images/band.jpg);
+}
+
+.options__card--dj {
+  background-image: url(/images/dj.jpg);
+}
+
+.options__button:link, .options__button:visited {
+  text-decoration: none;
+  background-color: #eb2f06;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 2rem;
+  padding: .8rem 3.5rem;
+  margin-top: 1rem;
+  transition: all .2s ease-out;
+}
+
+.options__button:link:hover, .options__button:link:active, .options__button:visited:hover, .options__button:visited:active {
+  background-color: #fa983a;
 }
 
 .welcome {
