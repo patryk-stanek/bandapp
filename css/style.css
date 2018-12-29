@@ -5,7 +5,7 @@
 
 html { font-size: 62.5%; }
 
-body { font-family: 'Roboto', sans-serif; color: var(--grey-dark-2); background-image: linear-gradient(to right bottom, #eb2f06, #fa983a); background-size: cover; background-repeat: no-repeat; min-height: 100vh; }
+body { font-family: 'Roboto', sans-serif; background-image: linear-gradient(to right bottom, #eb2f06, #fa983a); background-size: cover; background-repeat: no-repeat; min-height: 100vh; }
 
 .container { max-width: 120rem; margin: 8rem auto; background-color: #ffffff; box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
 
