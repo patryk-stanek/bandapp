@@ -54,6 +54,12 @@ body {
   color: #ffffff;
 }
 
+.heading-2 {
+  font-size: 3.5rem;
+  color: #eb2f06;
+  font-weight: 300;
+}
+
 .nav {
   -ms-flex-preferred-size: 35%;
       flex-basis: 35%;
@@ -312,5 +318,59 @@ body {
 .hero__text {
   color: transparent;
   -webkit-text-stroke: 2px #ffffff;
+}
+
+.welcome {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: rgba(235, 47, 6, 0.05);
+  padding: 0 2.5rem;
+}
+
+.welcome__box {
+  width: 50%;
+  padding: 5rem;
+}
+
+.welcome__list {
+  list-style: none;
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+
+.welcome__item {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #777;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.welcome__icon {
+  color: #eb2f06;
+  font-size: inherit;
+  margin-right: 1rem;
+  position: absolute;
+  left: -2rem;
+}
+
+.welcome__link:link, .welcome__link:visited {
+  color: #eb2f06;
+  text-decoration: none;
+}
+
+.welcome__link:link:hover, .welcome__link:link:active, .welcome__link:visited:hover, .welcome__link:visited:active {
+  text-decoration: underline;
+}
+
+.welcome__img {
+  width: 100%;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */
