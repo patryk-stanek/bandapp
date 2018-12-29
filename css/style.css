@@ -515,6 +515,14 @@ body {
   padding: 5rem 0;
 }
 
+.footer {
+  padding: 5rem 0;
+  text-align: center;
+  color: #ffffff;
+  background-color: #f6b93b;
+  font-size: 1.7rem;
+}
+
 .header {
   display: -ms-flexbox;
   display: flex;
