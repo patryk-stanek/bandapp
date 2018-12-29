@@ -5,6 +5,7 @@
     height: 25vw;
     position: relative;
     margin-top: 5rem;
+    text-align: center;
 
     & * {
         user-select: none;
@@ -113,7 +114,6 @@
         height: 1rem;
         display: block;
         position: absolute;
-        text-align: center;
     }
 
     &__dot {
