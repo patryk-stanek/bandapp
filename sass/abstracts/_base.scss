@@ -28,3 +28,22 @@ body {
     background-color: $color-white;
     box-shadow: $shadow-dark;
 }
+
+.btn:link,
+.btn:visited {
+    background-color: $color-primary;
+    border-radius: 5px;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+    @include transition;
+
+    &:hover,
+    &:active {
+        background-color: $color-primary-dark;
+    }
+}

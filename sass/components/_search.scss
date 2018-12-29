@@ -1,0 +1,35 @@
+.search {
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &__input {
+        font-family: inherit;
+        font-size: 1.3rem;
+        background-color: $color-grey-light-2;
+        border: none;
+        padding: .7rem 2rem;
+        border-radius: 100px;
+        width: 90%;
+        @include transition;
+        margin-right: -3.5rem;
+
+        &::placeholder {
+            color: $color-grey-dark-3;
+        }
+
+        &:focus,
+        &:active {
+            outline: 0;
+            width: 100%;
+            background-color: $color-grey-light-3;
+        }
+    }
+
+    &__icon {
+        font-size: 1.3rem;
+        color: $color-grey-dark-3;
+    }   
+}
