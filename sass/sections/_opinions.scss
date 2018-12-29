@@ -1,0 +1,48 @@
+.opinions {
+    @include section-padding;
+
+    &__box {
+        @include flexbox;
+        position: relative;
+        margin-top: 5rem;
+    }
+
+    &__figure {
+        flex-basis: percentage(1 / 3);
+        padding: 1rem;
+        overflow: hidden;
+        @include transition;
+        position: relative;
+    }
+
+    &__img {
+        width: 100%;
+        height: 20vw;
+        object-fit: cover;
+    }
+
+    &__text {
+        background-color: $color-white;
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+        right: 2rem;
+        padding: 2rem;
+    }
+
+    &__quote {
+        font-size: 1.2rem;
+        line-height: 2.4rem;
+        overflow: hidden;
+        font-style: italic;
+        @include transition;
+        max-height: 0;
+        backface-visibility: hidden;
+    }
+
+    &__figure:hover &__quote {
+        margin-top: 2rem;
+        height: auto;
+        max-height: 20rem;
+    }
+}
