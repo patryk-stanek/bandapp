@@ -1,4 +1,8 @@
 .customer {
     background-color: $color-primary-dark;
     @include section-padding;
+
+    & h2 {
+        text-align: center;
+    }
 }

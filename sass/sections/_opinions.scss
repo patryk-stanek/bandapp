@@ -1,5 +1,9 @@
 .opinions {
     @include section-padding;
+    
+    & h2 {
+        text-align: center;
+    }
 
     &__box {
         display: flex;

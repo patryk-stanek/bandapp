@@ -58,7 +58,6 @@ body {
 .heading-2-white {
   font-size: 3.5rem;
   font-weight: 300;
-  text-align: center;
 }
 
 .heading-2 {
@@ -505,6 +504,10 @@ body {
   padding: 5rem 0;
 }
 
+.customer h2 {
+  text-align: center;
+}
+
 .footer {
   padding: 5rem 0;
   text-align: center;
@@ -578,6 +581,10 @@ body {
   padding: 5rem 0;
 }
 
+.opinions h2 {
+  text-align: center;
+}
+
 .opinions__box {
   display: -ms-flexbox;
   display: flex;
@@ -629,6 +636,7 @@ body {
 
 .options {
   padding: 5rem 0;
+  text-align: center;
 }
 
 .options__container {
@@ -636,8 +644,6 @@ body {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
   margin-top: 5rem;
 }
 
