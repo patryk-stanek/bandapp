@@ -1,9 +1,14 @@
 .nav {
     flex-basis: 35%;
     margin-right: .5rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
+    &__top-list {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
     &__box {
         position: relative;

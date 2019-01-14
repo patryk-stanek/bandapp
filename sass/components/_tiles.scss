@@ -1,6 +1,7 @@
 .tiles {
     display: flex;
     padding: 0.5rem;
+    list-style: none;
 
     &__box {
         width: percentage(1 / 6);
